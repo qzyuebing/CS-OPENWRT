@@ -56,9 +56,12 @@ config samba
 config tinyproxy
 	option init 'tinyproxy'
 
+config sqm
+	option init 'sqm'
+
 config zerotier
 	option init 'zerotier'
 
-config sqm
-	option init 'sqm'
+config autoreboot
+	option init 'autoreboot'
 
