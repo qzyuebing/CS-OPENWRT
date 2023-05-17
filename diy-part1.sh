@@ -20,8 +20,3 @@ sed -i '$a src-git immortalwrt https://github.com/immortalwrt/packages' feeds.co
 #sed -i '$a src-git mmdvm https://github.com/sgyuebing/mmdvm-openwrt' feeds.conf.default
 sed -i '$a src-git mmdvm https://github.com/lazywalker/mmdvm-openwrt' feeds.conf.default
 sed -i '$a src-git devtools https://github.com/lazywalker/devtools-feeds' feeds.conf.default
-#sed -i '$a src-git alist https://github.com/sgyuebing/luci-app-alist' feeds.conf.default
-
-# repatch kenso8's naiveproxy patchfiles
-sed -i 's/if (is_linux) {/if (is_linux || is_chromeos) {/' package/feeds/kenzo/naiveproxy/patches/100-build-add-OpenWrt-staging-libraries.patch
-sed -i 's/@@ -746,7 +746,6/@@ -751,7 +751,6/' package/feeds/kenzo/naiveproxy/patches/101-build-drop-useless-deps-simd_asm.patch
