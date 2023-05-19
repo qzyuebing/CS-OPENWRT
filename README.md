@@ -1,30 +1,23 @@
-**English** | [中文](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
+# OpenWrt_x86
+自编译OpenWrt x86固件 每日检查上游代码并更新  
+内置ZeroTier、PassWall、AdGuardHome、迅雷快鸟、UU加速器、FRP、解锁网易云灰色（新版）、AdByby、KMS等插件  
+本仓库活跃更新 请放心使用！  
+默认输出Hyper-V的vhdx虚拟磁盘/VMWare Workstation的vmdk虚拟磁盘/用于安装的img镜像 
+有其它需求可以自行使用StarWind V2V Converter工具转换！  
+下载地址：[GitHub Releases](https://github.com/jiajiaxd/openwrt_x86/releases)  
 
-# Actions-OpenWrt
+[本固件恩山帖子链接](https://www.right.com.cn/forum/thread-5430278-1-1.html)  
 
-[![LICENSE](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square&label=LICENSE)](https://github.com/P3TERX/Actions-OpenWrt/blob/master/LICENSE)
-![GitHub Stars](https://img.shields.io/github/stars/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Stars&logo=github)
-![GitHub Forks](https://img.shields.io/github/forks/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Forks&logo=github)
+**因为每个人的使用情况不同，无法定出一个合适的预定空间。若有扩容的需求，请自行扩容。**  
+参考教程: https://www.openwrt.pro/post-594.html  
 
-A template for building OpenWrt with GitHub Actions
+### 部分使用截图
+![image](https://user-images.githubusercontent.com/51043917/163696966-ccccb4cf-d0f8-4d6e-ad01-2585f3f69eaa.png)
+![image](https://user-images.githubusercontent.com/51043917/209439539-eae56b07-9afb-4712-964a-c193b8244977.png)
+![image](https://user-images.githubusercontent.com/51043917/209439555-1e1b92f4-8b1b-4cad-b4a7-5b8d98b50b76.png)
+![image](https://user-images.githubusercontent.com/51043917/209439561-770bd7c8-cd82-4340-b46b-1b6582dd3a55.png)
 
-## Usage
-
-- Click the [Use this template](https://github.com/P3TERX/Actions-OpenWrt/generate) button to create a new repository.
-- Generate `.config` files using [Lean's OpenWrt](https://github.com/coolsnowwolf/lede) source code. ( You can change it through environment variables in the workflow file. )
-- Push `.config` file to the GitHub repository.
-- Select `Build OpenWrt` on the Actions page.
-- Click the `Run workflow` button.
-- When the build is complete, click the `Artifacts` button in the upper right corner of the Actions page to download the binaries.
-
-## Tips
-
-- It may take a long time to create a `.config` file and build the OpenWrt firmware. Thus, before create repository to build your own firmware, you may check out if others have already built it which meet your needs by simply [search `Actions-Openwrt` in GitHub](https://github.com/search?q=Actions-openwrt).
-- Add some meta info of your built firmware (such as firmware architecture and installed packages) to your repository introduction, this will save others' time.
-
-## Credits
-
-- [Microsoft Azure](https://azure.microsoft.com)
+### 鸣谢
 - [GitHub Actions](https://github.com/features/actions)
 - [OpenWrt](https://github.com/openwrt/openwrt)
 - [Lean's OpenWrt](https://github.com/coolsnowwolf/lede)
@@ -38,7 +31,5 @@ A template for building OpenWrt with GitHub Actions
 - [ActionsRML/delete-workflow-runs](https://github.com/ActionsRML/delete-workflow-runs)
 - [dev-drprasad/delete-older-releases](https://github.com/dev-drprasad/delete-older-releases)
 - [peter-evans/repository-dispatch](https://github.com/peter-evans/repository-dispatch)
-
-## License
-
-[MIT](https://github.com/P3TERX/Actions-OpenWrt/blob/main/LICENSE) © [**P3TERX**](https://p3terx.com)
+- [kenzok8/openwrt-packages](https://github.com/kenzok8/openwrt-packages)
+- [jerrykuku/luci-theme-argon](https://github.com/jerrykuku/luci-theme-argon)
