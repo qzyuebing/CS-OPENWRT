@@ -132,14 +132,14 @@ config rule
 config include
 	option path '/etc/firewall.user'
 
-config include 'zerotier'
-	option type 'script'
-	option path '/etc/zerotier.reload'
-	option reload '1'
-
 config include 'iptvhelper'
 	option type 'script'
 	option path '/etc/firewall.iptvhelper'
 	option family 'any'
+	option reload '1'
+
+config include 'zerotier'
+	option type 'script'
+	option path '/etc/zerotier.reload'
 	option reload '1'
 
