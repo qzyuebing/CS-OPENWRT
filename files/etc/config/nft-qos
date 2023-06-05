@@ -12,6 +12,6 @@ config default 'default'
 config upload
 	option unit 'mbytes'
 	option hostname 'wxy'
-	option ipaddr '192.168.2.50'
 	option rate '1'
+	option ipaddr '192.168.2.98'
 
