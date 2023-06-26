@@ -17,4 +17,4 @@ else
 end
 
 luciname    = "MMDVM X86"
-luciversion = "2023.06.01"
+luciversion = "山东·潍坊"
